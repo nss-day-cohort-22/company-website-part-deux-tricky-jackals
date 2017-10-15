@@ -1,0 +1,252 @@
+/* General styles for all menus */
+#push-menu
+{	display:none;
+}
+#push-menu.cbp-spmenu {
+	background: #333;
+	position: fixed; overflow:auto;
+}
+
+#push-menu.cbp-spmenu h3 {
+	color: #fff;
+	font-size: 1.6em;
+	padding: 20px 12px;
+	font-weight: bold;
+	margin: 0;
+	background: #000;
+}
+
+#push-menu.cbp-spmenu ul {
+	padding: 0;
+	background:none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: auto;
+    width: 100%;
+}
+
+#push-menu.cbp-spmenu a {
+	display: block;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 1.1em;
+	font-weight: 600;
+}
+
+#push-menu.cbp-spmenu a:hover {
+	background: #000;
+}
+
+#push-menu.cbp-spmenu a:active {
+	background: #000;
+	color: #fff;
+}
+
+/* Orientation-dependent styles for the content of the menu */
+
+#push-menu.cbp-spmenu-vertical {
+	width: 240px; 
+	height: 100%;
+	top: 0;
+	z-index: 1000;
+}
+
+#push-menu.cbp-spmenu-vertical a {
+	border-bottom: 1px solid #444;
+	padding: 1em;
+}
+
+#push-menu.cbp-spmenu-horizontal {
+	width: 100%;
+	height: 150px;
+	left: 0;
+	z-index: 1000;
+	overflow: hidden;
+}
+
+#push-menu.cbp-spmenu-horizontal h3 {
+	height: 100%;
+	width: 20%;
+	float: left;
+}
+
+#push-menu.cbp-spmenu-horizontal a {
+	float: left;
+	width: 20%;
+	padding: 0.8em;
+	border-left: 1px solid #258ecd;
+}
+
+/* Vertical menu that slides from the left or right */
+
+#push-menu.cbp-spmenu-left {
+	left: -240px;
+}
+
+#push-menu.cbp-spmenu-right {
+	right: -240px;
+}
+
+#push-menu.cbp-spmenu-left#push-menu.cbp-spmenu-open {
+	left: 0px; display:block;
+}
+
+#push-menu.cbp-spmenu-right#push-menu.cbp-spmenu-open {
+	right: 0px;
+}
+
+/* Horizontal menu that slides from the top or bottom */
+
+#push-menu.cbp-spmenu-top {
+	top: -150px;
+}
+
+#push-menu.cbp-spmenu-bottom {
+	bottom: -150px;
+}
+
+#push-menu.cbp-spmenu-top#push-menu.cbp-spmenu-open {
+	top: 0px;
+}
+
+#push-menu.cbp-spmenu-bottom#push-menu.cbp-spmenu-open {
+	bottom: 0px;
+}
+
+/* Push classes applied to the body */
+
+#push-menu.cbp-spmenu-push {
+	overflow-x: hidden;
+	position: relative;
+	left: 0;
+}
+
+#push-menu.cbp-spmenu-push-toright {
+	left: 240px;
+}
+
+#push-menu.cbp-spmenu-push-toleft {
+	left: -240px;
+}
+
+/* Transitions */
+
+#push-menu.cbp-spmenu,
+#push-menu.cbp-spmenu-push {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+/* Example media queries */
+
+@media screen and (max-width: 55.1875em){
+
+	#push-menu.cbp-spmenu-horizontal {
+		font-size: 75%;
+		height: 110px;
+	}
+
+	#push-menu.cbp-spmenu-top {
+		top: -110px;
+	}
+
+	#push-menu.cbp-spmenu-bottom {
+		bottom: -110px;
+	}
+
+}
+
+@media screen and (max-height: 26.375em){
+
+	#push-menu.cbp-spmenu-vertical {
+		font-size: 90%;
+		width: 240px;
+	}
+
+	#push-menu.cbp-spmenu-left,
+	#push-menu.cbp-spmenu-push-toleft {
+		left: -240px;
+	}
+
+	#push-menu.cbp-spmenu-right {
+		right: -240px;
+	}
+
+	#push-menu.cbp-spmenu-push-toright {
+		left: 240px;
+	}
+}
+.mobile_menu_new
+{	width:35px; height:35px; position:fixed; left:5px; top:5px; z-index:9999; border:0px;
+	background:url(menu_ic.png) no-repeat center !important; text-indent:-9999px; display:none; 
+}
+
+@media screen and (max-width:990px)
+{
+.mobile_menu_new
+{	display:block;
+}
+}
+.cbp-spmenu-push-toright .mobile_menu_new
+{	left:240px;
+}
+#push-menu ul#desktopMenu li
+{	display:block;
+}
+body.cbp-spmenu-push-toright
+{	position:relative; overflow:hidden; position:fixed;
+}
+
+
+
+
+
+
+.subcat-expand:before {
+  background: #fff;
+  bottom: 0;
+  content: "";
+  height: 14px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 2px;
+}
+
+.subcat-expand.subcat-expanded:before {
+  display: none;
+}
+
+.subcat-expand:after {
+  background: #fff;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 14px;
+}
+
+.subcat-expand {
+  cursor: pointer;
+  float: right;
+  height: 48px;
+  position: absolute;
+  right: 0;
+  top: 0px;
+  width: 34px;
+  z-index: 9;
+}
+
+
+#push-menu.cbp-spmenu ul li ul a
+{	font-size:12px; padding-left:30px;
+}

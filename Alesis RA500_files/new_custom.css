@@ -1,0 +1,206 @@
+
+#listing0 .detail-section .beta-col button {
+    width: 250px;
+}
+.qtybox-addcart #Add, .qtybox-addcart #Add:hover
+{	width:100%; height:100%; height:40px !important; text-indent:-9999px;
+	background:url(btn_bg_cart.jpg) no-repeat !important; border-radius:4px;	  
+}
+
+#rTabs .r-tabs-nav
+{	width:auto; float:left; border-bottom:3px solid #39383e; padding-bottom:1px;
+}
+.r-tabs .r-tabs-panel
+{	width:100%; float:left; border-top:1px solid #cccccc;
+}
+#rTabs .r-tabs-nav li 
+{	width:auto; float:left; margin:0px; padding:0px 5px 0 0px; height:auto; border:0px !important; background:none !important; 
+}
+#rTabs .r-tabs-nav li:last-child
+{	padding-right:0px;
+}
+#rTabs .r-tabs-nav li a
+{	height:40px; border:1px solid #b4b4b4; border-bottom:0px; line-height:40px; padding:0px 20px; font-size:13px; font-weight:bold; 	 
+	background:#FFF; color:#000000; 	-webkit-border-top-left-radius: 5px; -webkit-border-top-right-radius: 5px; -moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; margin:0px !important; float:left; 
+}
+#rTabs .r-tabs-nav li a:hover,
+#rTabs .r-tabs-nav li.r-tabs-state-active a
+{	border-color:#39383e; background:#39383e; color:#FFFFFF;
+}
+
+#recalculate, .addUpdateAddress, #affiliateInfo, #orderHistory, #viewWishlist, .crmRequestForm, #gcView 
+{    min-height: 800px;
+}
+
+@media screen and (max-width:1100px)
+{
+.footer h3
+{	font-size:16px;
+}
+.footer .col-right
+{	width:34%;
+}
+.header_mn.header_fixed .account-links,
+.header_mn.header_fixed #searchBox.searchtoggle form
+{	right:20px;
+}
+.category-footer
+{	margin-bottom:0px;
+}
+} 
+
+@media screen and (max-width:990px)
+{
+.footer
+{	background-size:100% auto;
+}
+#mailistBox
+{	float:left; height:auto; padding-bottom:30px;
+}
+.footer .f-menu
+{	width:100%; float:left; text-align:center;
+}
+.footer .f-menu li a
+{	color:#ffffff !important;
+}
+.footer .f-text
+{	width:100%; text-align:center; color:#FFFFFF;
+}
+.footer
+{	float:left; height:auto; padding-bottom:5px;
+}
+.copyright
+{	width:100%; float:left; text-align:center;
+}
+.relatedBlock_main .product-item .price
+{	min-height:60px;
+}
+.relatedBlock_main .product-item .status
+{	padding:0 8px;
+}
+.relatedBlock_main .product-item .status img
+{	width:66px;
+}
+}
+
+
+@media screen and (max-width:767px)
+{
+
+#recalculate {
+    min-height:inherit;
+}
+.footer .col-left
+{	width:50%;
+}
+.footer
+{	padding-top:70px;
+}
+.footer h3
+{	text-align:left; color:#FFFFFF;
+}
+.footer .col-right {
+    margin-top: 30px;    width: 100%;
+}
+#mailistBox
+{	margin-top:10px;
+}
+.footer .f-call
+{	float:none; width:220px; margin:10px auto;
+}
+.footer .f-cc
+{	width:100%; padding-bottom:20px; text-align:center;
+}
+.header_mn.header_fixed .addctoggle_mob
+{	margin-top:11px;
+}
+#mobileCart
+{	margin-top:12px;
+}
+#mobileMenu
+{	margin-top:13px;
+}
+.slicknav_menu .slicknav_nav
+{	position:fixed; bottom:0px; overflow:auto; width:200px; left:0px; height:250px;
+}
+.relatedBlock_main .product-item .status
+{	width:100%; padding-bottom:5px;
+}
+.price_block_pp .extra_field .info, #listing0 .detail-section .beta-col button
+{	width:100%;
+}
+.relatedBlock_main .product-item .action
+{	float:none; clear:both;
+}
+.chkComments textarea {
+    width: 100%;
+}
+#divPaymentMethods .txtBoxStyle
+{	width:340px;
+}
+
+#divPaymentMethods select.txtBoxStyle {
+    width: 167px;
+}
+#loginAccount .submit-button
+{	width:100%; text-align:center;
+}
+#loginAccount .fbconnect
+{	width:100%; text-align:center; margin-left:0px;
+}
+#loginAccount .fbconnect span
+{	display:inline-block; float:none;
+}
+#loginAccount .createNewAccount .create-account-button
+{	width:100%; text-align:center;
+}
+#loginAccount .fbconnect a
+{	display:block; margin-top:4px;
+}
+#category .home_product .product-item
+{	width:50%; float:left;
+}
+#category .home_product .product-item .btn_over
+{	padding:6px 12px; background:#252524;  border-radius: 4px; border:1px solid rgba(0, 0, 0, 0);
+	font-size: 14px;    line-height: 1.42857;
+}
+}
+
+@media screen and (max-width:479px)
+{
+#divPaymentMethods .txtBoxStyle
+{	width:234px;
+}
+#divPaymentMethods select.txtBoxStyle {
+    width: 114px;
+}
+}
+
+#back-to-top {
+    background: #38383e none repeat scroll 0 0;
+    border-radius: 4px;
+    display: table;
+    height: 52px;
+    margin-top: -26px;
+    opacity: 0;
+    overflow: hidden;
+    position: fixed;
+    right: 50px;
+    top: 50%;
+    transition: opacity 0.3s ease 0s, visibility 0s ease 0.3s;
+    visibility: hidden;
+    width: 52px;
+    z-index: 10; text-align:center; padding:14px 0px; 
+}
+#back-to-top.show
+{    opacity: 1;
+    visibility: visible;
+}
+#back-to-top  
+{	font-size:20px; color:#FFFFFF;
+}
+
+.slicknav_menu .slicknav_btn
+{	position:fixed; z-index:9999; top:0px;
+}
