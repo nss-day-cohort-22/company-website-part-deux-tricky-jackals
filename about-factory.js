@@ -1,38 +1,41 @@
-const ourTeam = {
-    "name": "Courtney",
-    "name": "Tyler",
-    "name": "Deanna",
-    "name": "Ryan",
-    "mame": "Alexis",
-    "title": "Our Team",
+const courtney = {      //here is the string of data
+"name": "Courtney Seward",
+"favoriteSong": "Her favorite song",
+"img":"",
 }
 
 
-const weProvide = {
-    "text": "Rental for events",
-    "text": "Touring",
+const tyler = {
+"name": "Tyler Bowman",
+"favoriteSong": "His favorite song" ,
+"img": "",
+}
 
+const deanna = {
+"name": "Deanna Vickers",
+"favoriteSong": "One of my favorite songs is called 'Istanbul' by They Might Be Giant",
+"img": "",
+}
+
+const ryan = {
+"name": "Ryan McPherson",
+"favoriteSong": "His favorite song is Bohemian Rhapsody",
+"img":"",
 }
 
 
-const reviews = {
-    "text": "I can't speak highly enough about the attentive staff at Jackel Audio. They were so helpful in a last minute order for some extra mics and speakers for a tour date that was thrown on the band last minute. They came through with providing all of the equipment needed and I would recommend them to anyone in the industry",
-    "text": "",
+const alexis = {
+"name": "Alexis Hennecy", 
+"favoriteSong":"",
+"img":"",
 }
 
+let employeesList = []  //this is the array
 
-const aboutContents = {
-"employees": employees,
-"weProvide": weProvide,
-"reviews": reviews   
-}
+employeesList.push(courtney, tyler, deanna, ryan, alexis)  //data is being pushed through the array
 
 
-const location = {
-"location": "4805 Livernois Ave",
-"city": "Detroit",
-"state": "MI 48210",
 
-}
-
-
+// factory to set the data to be stringified
+const employeesListString = JSON.stringify(employeesList)
+localStorage.setItem("employeesList", employeesListString)
