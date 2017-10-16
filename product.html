@@ -4,43 +4,44 @@
     <head>
         <title>Jackel Audio</title>
         <!--Linked webfonts and CSS files-->
+        <link href="global.css" rel="stylesheet">
         <link href="product.css"rel="stylesheet">
     </head>
     <body>
         <header>
-            <!-- Navigation Bar -->
             <nav>
                 <div class="nav">
                     <div class="navTitle">Jackel Audio</div>
                     <a href="index.html">home</a>
-                    <a href="products.html"class="selected">products</a>
+                    <a href="products.html"class="selected">Products</a>
                     <div class="sort">    
                         <div class="collection-sort">
                             <label>Filter by:</label>
-                            <select>
-                                <option value="/">All Products</option>
-                                <option value="/">On Sale Items</option>
-                                <option value="/">Really Really Neat Items</option>
-                                <option value="/">Unaffordable Items</option>                        
+                            <select id="filter">
+                                <option value="all">All Products</option>
+                                <option value="onSale">On Sale Items</option>
+                                <option value="neatItem">Really Really Neat Items</option>
+                                <option value="unaffordableItem">Unaffordable Items</option>                        
                             </select>
-                        </div>                    
+                            <button type="button" onclick="filter()">GO</button>
+                        </div>       
                     </div>
                 </div>
             </nav>
         </header>
 
-        <div class="content">
-            <h1 id="heading">products</h1>
-            
-        <!-- Products Grid -->
-            <section id="productList">
-            </section>
+        <div class="site-content">
+            <div class="content">
+                <h1 id="heading">Products</h1>
+                
+            <!-- Products Grid -->
+                <section id="productList">
+                </section>
+            </div>            
         </div>
 
         <!-- Footer -->
-        <footer>
-                <p>Jackel Audio &copy; 2017</p>
-            </footer>
+        <footer></footer>
         <!--Linked JavaScript Files-->
         <script src="product-factory.js"></script>
         <script src="product-controller.js"></script>
