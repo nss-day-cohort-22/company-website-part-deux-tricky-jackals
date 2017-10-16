@@ -13,7 +13,7 @@ document.getElementById("another").addEventListener("click", anotherProduct()) *
 
 
 
-    const storedServices = JSON.parse(localStorage.getItem("serviceList"))
+    const storedServices = JSON.parse(localStorage.getItem("serviceItems"))
     let serviceOutput = document.getElementsByClassName("product-select")[0]
     for (let i = 0; i < storedServices.length; i++) {
         let service = storedServices[i];
