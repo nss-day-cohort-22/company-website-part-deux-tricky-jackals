@@ -12,14 +12,13 @@ document.getElementById("another").addEventListener("click", anotherProduct()) *
 
 
 
-for (let i = 0; i < storedProducts.length; i++) {
-    
-    let productOutput = document.getElementsByClassName("product-select")[i]
-    for (let i = 0; i < storedProducts.length; i++) {
-        let product = storedProducts[i];
-        productOutput.innerHTML += 
+
+    const storedServices = JSON.parse(localStorage.getItem("serviceList"))
+    let serviceOutput = document.getElementsByClassName("product-select")[0]
+    for (let i = 0; i < storedServices.length; i++) {
+        let service = storedServices[i];
+        serviceOutput.innerHTML += 
         `
-        <option value= "${product.price}" name= "${product.name}">${product.name} -- $${product.price}</option>
+        <option value= "${product.HourlyRate}" name= "${product.name}">${product.name} -- $${product.HourlyRate}</option>
         ` 
     }
-}

@@ -12,3 +12,7 @@ function addItUp() {
 
     document.getElementById("total").innerHTML = num
 }
+
+
+
+
