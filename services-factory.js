@@ -19,26 +19,17 @@ const paSystemRental =
 const avSystemRental =
 {
     "name": "Rental for Audio/Visual for Concert",
-    "description": "Includes 2 large screens, 3 microphones and booms, 4 large speakers and a control panel.",
+    "description": "For your concert needs, we'll provide you with 2 large screens, 3 microphones and booms, 4 large speakers and a control panel.",
     "HourlyRate": "200",
     "MinimumHours": "4"
 }
 
-const locationTN =
+serviceList.push(soundEngineerRental, paSystemRental, avSystemRental)
+
+let ServiceItems =
 {
-    "name": "bækur Nashville",
-    "city": "Nashville",
-    "stateregion": "Tennessee",
-    "country": "United States",
-    "baekurrep": "Leah Duvic"
+    "serviceList": serviceList
 }
 
-storeList.push(locationLA,locationIT,locationRK,locationTN)
-
-let StoreLocations =
-{
-    "storeList": storeList
-}
-
-const storeLocationsString = JSON.stringify(StoreLocations)
-localStorage.setItem("storeLocations", storeLocationsString)
+const serviceItemsString = JSON.stringify(ServiceItems)
+localStorage.setItem("serviceitems", serviceItemString)
