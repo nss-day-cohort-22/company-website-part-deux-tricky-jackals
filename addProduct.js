@@ -4,8 +4,8 @@ function showNext() {
     let product4 = document.getElementById("product-4");
     let product5 = document.getElementById("product-5");
 
-    if (product2.style.display === "none;") {
-        product2.style.display = "block;";
+    if (product2.style.display === "none") {
+        product2.style.display = "block";
     } else {
         if (product3.style.display === "none") {
             product3.style.display = "block";
@@ -13,11 +13,10 @@ function showNext() {
             if (product4.style.display === "none") {
                 product4.style.display = "block";   
             } else {
-                if (product5.style.display === "none") {
+                
                     product5.style.display = "block";
                 }
             }
         }
     }
 
-}

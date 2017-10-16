@@ -19,7 +19,7 @@ for (let i = 0; i < storedProducts.length; i++) {
         let product = storedProducts[i];
         productOutput.innerHTML += 
         `
-        <option value= ${product.price} name=${product.name}>${product.name} -- $${product.price}</option>
+        <option value= "${product.price}" name= "${product.name}">${product.name} -- $${product.price}</option>
         ` 
     }
 }
