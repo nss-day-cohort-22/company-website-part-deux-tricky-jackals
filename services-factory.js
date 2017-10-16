@@ -1,5 +1,4 @@
-let serviceList = []
-
+//SET UP DATA OBJECTS
 const soundEngineerRental =
 {
     "name": "Rent a Sound Engineering Team",
@@ -24,12 +23,12 @@ const avSystemRental =
     "MinimumHours": "4"
 }
 
+//CREATE DATA CONTAINER
+let serviceList = []
+
+//PUSH DATA TO CONTAINER
 serviceList.push(soundEngineerRental, paSystemRental, avSystemRental)
 
-let ServiceItems =
-{
-    "serviceList": serviceList
-}
-
-const serviceItemsString = JSON.stringify(ServiceItems)
-localStorage.setItem("serviceItems", serviceItemsString)
+//STRINGIFY - ADD TO LOCAL STORAGE
+const serviceListString = JSON.stringify(serviceList)
+localStorage.setItem("serviceList", serviceListString)
