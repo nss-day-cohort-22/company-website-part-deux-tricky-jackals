@@ -14,9 +14,9 @@ for (let i = 0; i < storedProducts.length; i++) {
         <section class="products">
             <img src="${products.img}" alt="${products.title}" width="150px">
             <ul>
-                <li>Product: ${products.name} </li>
-                <li>Price: $${products.price}</li>
-                <li>Description: ${products.description}</li>
+                <p>Product: ${products.name} </p>
+                <p>Price: $${products.price}</p>
+                <p>Description: ${products.description}</p>
             </ul>
         </section>
         `
