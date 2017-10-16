@@ -1,21 +1,3 @@
-/* let productOut = document.getElementById("estimateReq")
-function anotherProduct() {
-    productOut.innerHTML += document.getElementsByClassName("products")
-
-}
-
-document.getElementById("another").addEventListener("click", anotherProduct()) */
-
-for (var i = 0; i < 6; i++) {
-    
-    function addItUp() {
-        let price = document.getElementsByClassName("product-select")[i].value;
-        let qty = document.getElementsByClassName("quantity")[i].value;
-        let total = price * qty;
-        document.getElementById("total").innerHTML = "$"+total
-    }
-}
-
 function showNext() {
     let product2 = document.getElementById("product-2");
     let product3 = document.getElementById("product-3");
