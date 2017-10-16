@@ -4,6 +4,7 @@
     <head>
         <title>Jackel Audio</title>
         <!--Linked webfonts and CSS files-->
+        <link href="global.css" rel="stylesheet">
         <link href="product.css"rel="stylesheet">
     </head>
     <body>
@@ -16,13 +17,14 @@
                     <div class="sort">    
                         <div class="collection-sort">
                             <label>Filter by:</label>
-                            <select>
-                                <option value="/">All Products</option>
-                                <option value="/">On Sale Items</option>
-                                <option value="/">Really Really Neat Items</option>
-                                <option value="/">Unaffordable Items</option>                        
+                            <select id="filter">
+                                <option value="all">All Products</option>
+                                <option value="onSale">On Sale Items</option>
+                                <option value="neatItem">Really Really Neat Items</option>
+                                <option value="unaffordableItem">Unaffordable Items</option>                        
                             </select>
-                        </div>                    
+                            <button type="button" onclick="filter()">GO</button>
+                        </div>       
                     </div>
                 </div>
             </nav>
