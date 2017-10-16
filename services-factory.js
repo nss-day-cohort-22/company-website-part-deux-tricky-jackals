@@ -1,8 +1,8 @@
-let services = []
+let serviceList = []
 
 const soundEngineerRental =
 {
-    "name": "",
+    "name": "Rent a Sound Engineering Team",
     "description": "Includes two (2) Jackel Audio certified sound engineers who will manage the transport, setup, install and testing of your equipment rental or purchase. ",
     "HourlyRate": "100",
     "MinimumHours": "10"
@@ -32,4 +32,4 @@ let ServiceItems =
 }
 
 const serviceItemsString = JSON.stringify(ServiceItems)
-localStorage.setItem("serviceitems", serviceItemString)
+localStorage.setItem("serviceItems", serviceItemsString)
