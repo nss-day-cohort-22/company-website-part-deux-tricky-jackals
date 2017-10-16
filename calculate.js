@@ -7,9 +7,12 @@ function addItUp() {
         let qty = document.getElementsByClassName("quantity")[i].value;
          subTotal += (price * qty);   
     }
-
-    let num = '$' + subTotal.toFixed(2).replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,");
-
+    let tax = (subTotal * .0925)
+    let total = (subTotal + tax)
+    let num = '$' + total.toFixed(2).replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,");
+    
+    document.getElementById("subtotal").innerHTML = subTotal
+    document.getElementById("tax").innerHTML =  tax
     document.getElementById("total").innerHTML = num
 }
 
