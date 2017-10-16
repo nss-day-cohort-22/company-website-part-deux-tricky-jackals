@@ -1,0 +1,107 @@
+
+/* CSS for the Header */
+header {
+    justify-content: flex-end;
+    background-color: #ffc8c8;
+    height: 50px;
+    box-shadow:0px 12px 4px 1px rgba(0, 0, 0, .2);    
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0px 0px;
+    padding-top: 5px;
+  }
+
+li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    flex:1;
+    padding: 10px 20px;
+}
+
+li:hover {
+    background-color: #e44e4e;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+/*End of the CSS for Nav Bar */
+
+/* Body Content */
+
+body {
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: 'Bellefair', serif;
+}
+
+
+body{
+    background-color: #aa3939 ;;
+
+} 
+
+.site-content{
+    flex-grow: 1;   
+}
+
+/* Adding Space in between the Nav Bar and Main Body */
+ .site-content {
+    flex: 1;
+    margin: auto;
+    padding: 300px 0;
+    text-align: justify;
+    height: 100hv;
+}
+
+/* Footer for Global CSS */
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffc8c8;
+    height: 50px;
+    align-items: center;
+    padding:    40px 50px;
+    box-shadow: 0px -12px 4px 1px rgba(0, 0, 0, .2);    
+}
+
+footer p {
+    margin: 0;
+    color: #202524;    
+    font-size: .8em;   
+}
+
+footer div {
+    width: 33%;
+}
+#contact {
+    text-align: left;
+}
+
+#hours {
+    text-align: center;
+}
+
+#copyright {
+    text-align: right;
+}
+
+.bold {
+    font-size:1.2em;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.navbar {
+    box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, .2);    
+}
