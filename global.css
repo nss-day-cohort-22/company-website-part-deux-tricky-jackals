@@ -1,8 +1,51 @@
 
+
+/* Nav Bar */
+
+/* Editing the Close Button for the Nav */
+.closeButton{
+    position: absolute;
+    top:100%;
+    left:50%;
+    z-index:11;
+    margin-top:-2.25;
+    margin-left: -2.25em;
+    padding-top: 0em;
+    width:4em;
+    height:4.5em;
+    border:none;
+    border-radius: 50%;
+    background: none;
+    background-color: #fff;
+    color: #52be7f;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    cursor: pointer;
+} 
+
+button {
+    outline:none;
+
+}
+
+
+/* Adding Space in between the Nav Bar and Main Body */
+ .site-content {
+    flex: 1;
+    width: 90%;
+    margin: auto;
+    padding: 10px 0;
+    text-align: justify;
+    height: 100hv;
+}
+
+/* Footer for Global CSS */
 footer {
     display: flex;
     justify-content: space-between;
-    background-color: #e4a09b;
+    background-color: rgb(230, 162, 162);
     height: 95px;
     align-items: center;
     padding:    0px 15px;
@@ -36,7 +79,7 @@ footer div {
 
 .navbar a {
     text-decoration: none;
-    color: #16594a; 
+   
   }
 
 .navbar {
