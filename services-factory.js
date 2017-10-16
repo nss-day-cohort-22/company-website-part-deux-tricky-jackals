@@ -32,4 +32,4 @@ let ServiceItems =
 }
 
 const serviceItemsString = JSON.stringify(ServiceItems)
-localStorage.setItem("serviceitems", serviceItemString)
+localStorage.setItem("serviceItems", serviceItemString)
