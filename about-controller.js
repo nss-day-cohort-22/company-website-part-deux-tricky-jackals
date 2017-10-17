@@ -15,6 +15,7 @@ teamInfo.innerHTML +=
 <li>favorite song: ${employees.favoriteSong}</li>
 
 </ul>
+
 </section>
 `    
 }

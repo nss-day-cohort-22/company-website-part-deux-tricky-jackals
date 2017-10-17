@@ -1,73 +1,15 @@
 .description {
-    font-size: 1.5em;
+    font-size: 1em;
     font-style: italic;
-    padding-top: 3em;
+    padding-top: 1em;
     display: center;
+    text-align: center;
+}
+
+.employee {
+    color: dark gray;
 }
 
 
 
 
-
-
-
-let pioneerController = {
-    "name": "Pioneer DDJ-SX",
-    "price": "289.99",
-    "description": "Gator GTOURDSPDDJSX Road Case for Pioneer DDJ-SX With Sliding Platform"
-    "URL": "https://www.americanmusical.com/Galleria/2/GAT%20GTOURDSPDDJSX-Large.jpg"
-    "img": "controller.jpg",
-    "title": "controller",
-    "tag": "onSale",
-    "page": "2"
-}
-
-
-let passiveSpeakers = {
-    "name": "15 Inch 2 Way Passive PA Speakers",
-    "price": "1098.99",
-    "description": "The JBL PRX415M 2 Way PA Speaker is a portable, fifteen-inch two-way speaker system designed for either main sound reinforcement or monitoring applications."
-    "URL": "https://media.americanmusical.com/ItemImages/Large/JBL%20PRX415M%20PR.jpg"
-    "img": "boseSpeaker.jpg",
-    "title": "speakers",
-    "tag": "onSale",
-    "page": "2"
-}
-
-
-
-let boseSpeakers = {
-    "name": "Virtually Invisible 891 in-wall speakers",
-    "price": "599.95",
-    "description": "These rectangular Virtually Invisible® in-wall speakers are engineered with one 7 inch woofer and two strategically positioned 1 tweeters each."
-    "URL":
-    "https://assets.bosecom/content/dam/Bose_DAM/Web/consumer_electronics/global/products/speakers/virtually_invisible_891_in_wall_speakers/product_silo_images/virtually_invisible_891_EC_hero.psd/jcr:content/renditions/cq5dam.web.600.600.png"
-    "img": "boseInWallSpeaker.jpg",
-    "title": "speakers",
-    "tag": "onSale",
-    "page": "2"
-}
-
-    let wirelessBoseSpeakers = {
-        "name": "SoundTouch outdoor wireless system with 151 SE speakers",
-        "price": "778.90",
-        "description": "Our popular wireless outdoor speakers deliver rich sound and clear performance—even in large outside areas."
-        "URL": "https://assets.bose.com/content/dam/Bose_DAM/Web/consumer_electronics/global/products/speakers/soundtouch_151_SE_outdoor_speaker_system/product_silo_images/st_outdoor_151se_sa5_black_EC1.psd/jcr:content/renditions/cq5dam.web.600.600.png"
-        "img": "speakersBoseSmall.png"
-        "title": "speakers",
-        "tag": "onSale",
-        "page": "2"    
-    }
-
-
-
- let  fullSpeakerBose= {
-        "name": "A Full Bose F1 PA Speaker Setup",
-        "price": "5352.00",
-        "description": "Two 1,000W Array Loudspeakers, Two 1,000W Powered Subwoofers, and Carrying Bags for each"
-        "URL": "https://media.sweetwater.com/api/i/f-webp__ha-63b8f12cb04b3d25__q-82__hmac-a700f6ac0f1020d649ff5c8324fcd56c39193d67/images/items/750/F1System-large.jpg.auto.webp"
-        "img": "bosef1.jpeg"
-        "title": "speakers",
-        "tag": "onSale",
-        "page": "2"    
-    }
