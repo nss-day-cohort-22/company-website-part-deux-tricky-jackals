@@ -216,5 +216,4 @@ const productsArchiveString = JSON.stringify(products);
 //Stored the stringified array into LocalStorage.
 localStorage.setItem("productsArchive", productsArchiveString);
 
-//Created a variable to hold the parsed array pulled from LocalStorate
-const storedProducts = JSON.parse(localStorage.getItem("productsArchive"));
+
