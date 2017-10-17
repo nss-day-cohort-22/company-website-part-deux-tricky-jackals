@@ -2,11 +2,11 @@
 <html>
     <head>
         <title>Jackel Audio | Contact</title>
-        <link href="global.css" rel="stylesheet">
+   
         <link href="contact.css" rel="stylesheet">
     </head>
     <body>
-            <header id="headerContent">
+         <!--    <header id="headerContent">
                         <ul>
                             <li><a href="main.html"><span class="home"> Home</span> </a></li>
                             <li><a href="product.html"><span class="products">Products</span> </a></li>
@@ -14,12 +14,13 @@
                             <li><a href="estimate.html"><span class="estimate">Estimate</span> </a></li>
                             <li><a href="about.html"><span class="about">About</span></a></li>
                         </ul>
-                </header>
+                </header> -->
         <section id="estimateReq">
             <h1>Estimate Calculator</h1>
-            <h3>Products</h2>
-            <section id= "product-1">
-            <select class="product-select">
+            <h3>Services</h2>
+            <section id= "service-1">
+            <select class="service-select">
+                <option value="0">---</option>
           
             </select>
             <h3 class="qty">Number of Hours</h3>
@@ -37,15 +38,177 @@
                 <option value = "11">11</option>
                 <option value = "12">12</option>
             </select>
+            <button onclick = "showNextService()">Add Service</button>
             </section>  
-    
-                    <button onClick="addItUp()">Calculate Total</button>
+            <section id= "service-2" style="display: none">
+                <select class="service-select">
+                    <option value="0">---</option>
+                </select>
+                <h3 class="qty">Number of Hours</h3>
+                <select class="quantity">
+                    <option value = "1">1</option>
+                    <option value = "2">2</option>
+                    <option value = "3">3</option>
+                    <option value = "4">4</option>
+                    <option value = "5">5</option>
+                    <option value = "6">6</option>
+                    <option value = "7">7</option>
+                    <option value = "8">8</option>
+                    <option value = "9">9</option>
+                    <option value = "10">10</option>
+                    <option value = "11">11</option>
+                    <option value = "12">12</option>
+                </select>
+                <button onclick = "showNextService()">Add Service</button>
+                </section>  
+                <section id= "service-3" style="display: none">
+                    <select class="service-select">
+                        <option value="0">---</option>
+                    </select>
+                    <h3 class="qty">Number of Hours</h3>
+                    <select class="quantity">
+                        <option value = "1">1</option>
+                        <option value = "2">2</option>
+                        <option value = "3">3</option>
+                        <option value = "4">4</option>
+                        <option value = "5">5</option>
+                        <option value = "6">6</option>
+                        <option value = "7">7</option>
+                        <option value = "8">8</option>
+                        <option value = "9">9</option>
+                        <option value = "10">10</option>
+                        <option value = "11">11</option>
+                        <option value = "12">12</option>
+                    </select>
+                    <button onclick = "showNextService()">Add Service</button>
+                    </section>  
+                
+                    <button onClick="calculateEstimate()">Calculate Total</button>
                     <h3>Sub-total:</h3>
                     <h2 id="subtotal"></h2>
                     <h3>Tax:</h3>
                     <h2 id="tax"></h2>
                     <h3>Your Estimated Total is:</h3>
                     <h3 id="total"></h3>
+            </section>
+            <section id="productForm">
+                <h1>Price Calculator</h1>
+                <h2>Products:</h2>
+                <section id= "product-1">
+                        <select class="product-select">
+                            <option value="0">---</option>
+                        </select>
+                        <h3 class="ProductQty">Quantity</h3>
+                        <select class="quantity">
+                            <option value = "1">1</option>
+                            <option value = "2">2</option>
+                            <option value = "3">3</option>
+                            <option value = "4">4</option>
+                            <option value = "5">5</option>
+                            <option value = "6">6</option>
+                            <option value = "7">7</option>
+                            <option value = "8">8</option>
+                            <option value = "9">9</option>
+                            <option value = "10">10</option>
+                            <option value = "11">11</option>
+                            <option value = "12">12</option>
+                        </select>
+                        <button onclick="showNextProduct()">Add Another Product</button>
+                        </section> 
+                        <section id= "product-2" style="display: none">
+                            <select class="product-select">
+                                <option value="0">---</option>
+                            </select>
+                            <h3 class="ProductQty">Quantity</h3>
+                            <select class="quantity">
+                                <option value = "1">1</option>
+                                <option value = "2">2</option>
+                                <option value = "3">3</option>
+                                <option value = "4">4</option>
+                                <option value = "5">5</option>
+                                <option value = "6">6</option>
+                                <option value = "7">7</option>
+                                <option value = "8">8</option>
+                                <option value = "9">9</option>
+                                <option value = "10">10</option>
+                                <option value = "11">11</option>
+                                <option value = "12">12</option>
+                            </select>
+                            <button onclick="showNextProduct()">Add Another Product</button>
+                        </section> 
+                        <section id= "product-3" style="display: none">
+                            <select class="product-select">
+                                <option value="0">---</option>
+                            </select>
+                            <h3 class="ProductQty">Quantity</h3>
+                            <select class="quantity">
+                                <option value = "1">1</option>
+                                <option value = "2">2</option>
+                                <option value = "3">3</option>
+                                <option value = "4">4</option>
+                                <option value = "5">5</option>
+                                <option value = "6">6</option>
+                                <option value = "7">7</option>
+                                <option value = "8">8</option>
+                                <option value = "9">9</option>
+                                <option value = "10">10</option>
+                                <option value = "11">11</option>
+                                <option value = "12">12</option>
+                            </select>
+                            <button onclick="showNextProduct()">Add Another Product</button>
+                        </section>
+                        <section id= "product-4" style="display: none">
+                            <select class="product-select">
+                                <option value="0">---</option>
+                            </select>
+                            <h3 class="ProductQty">Quantity</h3>
+                            <select class="quantity">
+                                <option value = "1">1</option>
+                                <option value = "2">2</option>
+                                <option value = "3">3</option>
+                                <option value = "4">4</option>
+                                <option value = "5">5</option>
+                                <option value = "6">6</option>
+                                <option value = "7">7</option>
+                                <option value = "8">8</option>
+                                <option value = "9">9</option>
+                                <option value = "10">10</option>
+                                <option value = "11">11</option>
+                                <option value = "12">12</option>
+                            </select>
+                            <button onclick="showNextProduct()">Add Another Product</button>
+                        </section>
+                        <section id= "product-5" style="display: none">
+                            <select class="product-select">
+                                <option value="0">---</option>
+                            </select>
+                            <h3 class="ProductQty">Quantity</h3>
+                            <select class="quantity">
+                                <option value = "1">1</option>
+                                <option value = "2">2</option>
+                                <option value = "3">3</option>
+                                <option value = "4">4</option>
+                                <option value = "5">5</option>
+                                <option value = "6">6</option>
+                                <option value = "7">7</option>
+                                <option value = "8">8</option>
+                                <option value = "9">9</option>
+                                <option value = "10">10</option>
+                                <option value = "11">11</option>
+                                <option value = "12">12</option>
+                            </select>
+                            <button onclick="showNextProduct()">Add Another Product</button>
+                        </section>   
+                        <button onClick="calculatePrice()">Calculate Total</button>
+                        <h3>Sub-total:</h3>
+                        <h2 id="subtotal2"></h2>
+                        <h3>Tax:</h3>
+                        <h2 id="tax2"></h2>
+                        <h3>Your Estimated Total is:</h3>
+                        <h3 id="total2"></h3>   
+
+
+
             </section>
             <!-- Begin writing the footer -->
 <footer class="footerContent">
@@ -67,8 +230,8 @@
 </div>        
 </footer>
         <script></script>
-        
-        <!-- <script src="addProduct.js"></script> -->
+        <script src="addService.js"></script>
+        <script src="addProduct.js"></script>
         <script src= "services-factory.js"></script>
         <script src= "services-controller.js"></script>
         <script src="populateSelect.js"></script>
