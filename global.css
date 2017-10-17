@@ -1,7 +1,7 @@
 
 /* Overall CSS styling */
 
-/*Styling Elements */
+/*Styling Elements for the body*/
 header,main,nav,section {
     display:block; 
 }
@@ -18,8 +18,7 @@ body {
 	color: #fff;
 }
 
-/* the "a" elements are the buttons on the Nav Bar */
-
+/* the "a" elements are the elements for the buttons on the Nav Bar */
 a:focus {
     outline:thin dotted; 
 }
@@ -32,7 +31,7 @@ h1 {
     font-size:2em;margin:0.67em 0;
 }
 
-/* Styling Classes */
+/* Begin styling Classes */
 
 /* the *aestrik is centering the transparent "Jackel Audio" text in the middle of the page */
 * {
@@ -44,7 +43,7 @@ h1 {
 	list-style: none;
 }
 
-/* These elemnts style the nav bar - Demo Buttons Styling */
+/* These elements style the nav bar  */
 .codrops-demos {
 	padding-top: 1em;
 	font-size: 0.9em;
@@ -73,7 +72,7 @@ h1 {
 	background: rgba(0,0,0,0.05);
 	font-family: 'Lato', Arial, sans-serif;
 }
-
+/* Syling classes continued with Sibling Elements */
 .component > h2 {
 	position: absolute;
 	overflow: hidden;
@@ -157,7 +156,7 @@ h1 {
     align-items: center;
     padding: 40px 50px;
     box-shadow: 0px -12px 4px 1px rgba(0, 0, 0, .2);  
-    position: relative; 
+    position:relative; 
     left:0px;
     bottom:0px;
     height:30px;
