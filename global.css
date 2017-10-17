@@ -18,7 +18,7 @@ body {
 	color: #fff;
 }
 
-/* the "a" elements are the elements for the buttons on the Nav Bar */
+/* The "a" lements are the elements that make the buttons on the Nav Bar */
 a:focus {
     outline:thin dotted; 
 }
@@ -33,7 +33,7 @@ h1 {
 
 /* Begin styling Classes */
 
-/* the *aestrik is centering the transparent "Jackel Audio" text in the middle of the page */
+/* the * - aestrik is centering the transparent text, "Jackel Audio",  in the middle of the page */
 * {
 	position: relative;
 	-moz-box-sizing: border-box;
@@ -43,7 +43,7 @@ h1 {
 	list-style: none;
 }
 
-/* These elements style the nav bar  */
+/* These elements style the nav bar- this element holds the <a> tags that make up the items in the nav bar  */
 .codrops-demos {
 	padding-top: 1em;
 	font-size: 0.9em;
@@ -148,6 +148,7 @@ h1 {
 
 
 /* Footer Styling for Global CSS */
+
 .footerContent {
     display: flex;
     justify-content: space-between;
