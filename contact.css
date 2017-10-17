@@ -4,3 +4,27 @@
     padding-left: 20px;
 }
 
+#productForm,
+#estimateReq {
+background-color: slategray;
+width: 50%;
+margin-right: auto;
+margin-left: auto;
+margin-bottom: 20px;
+border-radius: 5px;
+box-shadow: 5px 5px 30px black;
+
+}
+
+
+.container1 {
+    padding: 2px 0px 15px 15px
+}
+
+#estimateReq {
+    margin-top: 20px;
+}
+
+body {
+height: auto;    
+}
