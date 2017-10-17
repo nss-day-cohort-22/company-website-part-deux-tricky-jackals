@@ -1,6 +1,6 @@
 const courtney = {      //here is the string of data
 "name": "Courtney Seward",
-"favoriteSong": "Her favorite song",
+"favoriteSong": "She was unable to choose just one favorite song because there are endless possibilities, so we settled on a favorite album which is...Coloring Book by Chance the Rapper.",
 "img":"",
 }
 
@@ -13,20 +13,20 @@ const tyler = {
 
 const deanna = {
 "name": "Deanna Vickers",
-"favoriteSong": "One of my favorite songs is called 'Istanbul' by They Might Be Giant",
+"favoriteSong": "One of Deanna's favorite songs is called 'Istanbul' by They Might Be Giant",
 "img": "",
 }
 
 const ryan = {
 "name": "Ryan McPherson",
-"favoriteSong": "His favorite song is Bohemian Rhapsody",
+"favoriteSong": "Ryan's favorite song is Bohemian Rhapsody",
 "img":"",
 }
 
 
 const alexis = {
 "name": "Alexis Hennecy", 
-"favoriteSong":"",
+"favoriteSong": "Alexis was also not able to choose just one song, so she settled for her favorite band: Radiohead.",
 "img":"",
 }
 
