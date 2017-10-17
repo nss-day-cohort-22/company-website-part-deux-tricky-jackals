@@ -101,11 +101,7 @@ for (let i = 0; i < storedProducts.length; i++) {
             </ul>
         </section>
         `
-<<<<<<< HEAD
     } */
-=======
-    }
->>>>>>> master
     
 // Pagination filter
 
