@@ -79,6 +79,15 @@ document.getElementById("next").addEventListener("click", nextFilter)
 
 
 filter(0)
+function Hide() {
+    let previous = document.getElementById("prev")
+    if(current === 0){
+        previous.style.display = "none"
+    } else {
+        previous.style.display = "block"
+    }
+}
+Hide()
 /* 
 //Created a variable to hold the queried DOM element.
 let productsOut = document.getElementById("productList");
