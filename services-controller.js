@@ -1,20 +1,20 @@
-const serviceDetail = JSON.parse(localStorage.getItem("serviceItems"))
+//GET DATA FROM STORAGE
+const serviceDetail = JSON.parse(localStorage.getItem("serviceList"))
 
+//CREATE VARIABLE TO SHOW DATA ON UI
 const serviceInfo = document.getElementsByClassName("services")[0]
 
-for (let key in serviceDetail)
-    {
-    const currentService = serviceDetail[key]
-
-    for (let i = 0; i < currentService.length; i++)
+//BUILD ITERATION METHOD TO LOOP THROUGH DATA
+    for (i = 0; i < serviceDetail.length; i++)
         {
-        let service = currentService[i]
-        serviceInfo.innerHTML +=
+        let service = serviceDetail[i];
+        
+        serviceInfo.innerHTML +=  //CALL THE DATA TO THE UI
         `
-        <article class="$(key">
-            <h3>${service.name}</h3>
+        <article class="$(key) gridbox">    
+            <h3>${service.name}</h3>        
             <p>${service.description}</p>
+            <p>${service.HourlyRate}</p>
         </article>
         `
         }
-    }
