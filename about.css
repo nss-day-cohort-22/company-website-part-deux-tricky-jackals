@@ -1,15 +1,24 @@
 .description {
     font-size: 1em;
     font-style: italic;
-    padding-top: 1em;
-    display: center;
+    padding-top: 3em;
+    padding-bottom: 6em;
+    display: center; 
     text-align: center;
 }
 
-.employee {
-    color: dark gray;
+
+#employeeList {
+    text-align: center;
+    
 }
 
 
-
-
+.employee {
+    color: dark black;
+    margin: 2em 2em 2em 2em;
+    padding: 5em;
+    text-align: left;
+    background: gray;
+    
+}
