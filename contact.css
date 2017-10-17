@@ -1,4 +1,5 @@
-.qty {
+.qty,
+.ProductQty {
     display: inline-block;
     padding-left: 20px;
 }
