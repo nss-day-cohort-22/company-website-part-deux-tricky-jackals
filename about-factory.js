@@ -1,7 +1,7 @@
 const courtney = {      //here is the string of data
 "name": "Courtney Seward",
 "favoriteSong": "She was unable to choose just one favorite song because there are endless possibilities, so we settled on a favorite album which is...Coloring Book by Chance the Rapper.",
-"img":"",
+"img":"https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.cesarsway.com%2Fsites%2Fnewcesarsway%2Ffiles%2Fstyles%2Flarge_article_preview%2Fpublic%2FCommon-dog-behaviors-explained.jpg%3Fitok%3DFSzwbBoi&imgrefurl=https%3A%2F%2Fwww.cesarsway.com%2Fdog-behavior&docid=vO9RrtMNdYJKzM&tbnid=SHNlh2wEE8JTMM%3A&vet=10ahUKEwja_PeG9_fWAhUB_4MKHUnHBDgQMwg9KAEwAQ..i&w=845&h=450&bih=736&biw=1440&q=dog&ved=0ahUKEwja_PeG9_fWAhUB_4MKHUnHBDgQMwg9KAEwAQ&iact=mrc&uact=8",
 }
 
 
