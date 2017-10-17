@@ -130,8 +130,7 @@ let boseSpeakers = {
     "URL": "https://assets.bosecom/content/dam/Bose_DAM/Web/consumer_electronics/global/products/speakers/virtually_invisible_891_in_wall_speakers/product_silo_images/virtually_invisible_891_EC_hero.psd/jcr:content/renditions/cq5dam.web.600.600.png",
     "img": "boseInWallSpeaker.jpg",
     "title": "speakers",
-    "tag": "onSale",
-    "page": "2"
+    "tag": "onSale"
 }
 
 let wirelessBoseSpeakers = {
@@ -144,7 +143,7 @@ let wirelessBoseSpeakers = {
     "tag": "onSale"  
 }
 
- let  fullSpeakerBose= {
+ let fullSpeakerBose = {
     "name": "A Full Bose F1 PA Speaker Setup",
     "price": "5352.00",
     "description": "Two 1,000W Array Loudspeakers, Two 1,000W Powered Subwoofers, and Carrying Bags for each",
@@ -152,11 +151,64 @@ let wirelessBoseSpeakers = {
     "img": "bosef1.jpeg",
     "title": "speakers",
     "tag": "onSale"
-    }
+}
+
+let microphone = {
+    "name": "Samson Meteor Mic USB Studio Condenser Microphone",
+    "price": "69.99",
+    "description": "TSamson meteor mic USB studio condenser microphone produces high-quality audio recording for any application.",
+    "URL": "https://www.google.com/shopping/product/11859342197776045340?lsf=seller:10048,store:13960113375953198258&prds=oid:1044339786323067090&q=microphone+for+sale+near+me&hl=en&ei=tT_mWei3POuwjwS33IeIDA&lsft=gclid:Cj0KCQjw1JbPBRCrARIsAOKj2PlxeO0zo0H2BqSLIztY2r-PeX_uf74_V6pV20vLixsZhh9ySjCoUsoaAluVEALw_wcB",
+    "img": "microphone.jpeg",
+    "title": "microphone",
+    "tag": "onSale"
+}
+
+let microphoneTwo = {
+    "name": "Samson M10 Karaoke Microphone",
+    "price": "19.99",
+    "description": "The Samson, M10 Karaoke Microphone will have you and your friends sounding better than ever.",
+    "URL": "https://www.target.com/p/samson-m10-karaoke-microphone/-/A-14796575?ref=tgt_adv_XS000000&AFID=google_pla_df&CPNG=PLA_Electronics+Shopping&adgroup=SC_Electronics&LID=700000001170770pgs&network=g&device=c&location=9013191&gclid=Cj0KCQjw1JbPBRCrARIsAOKj2Pno7JxzqPTNCRbZb6pvTqs1W5fa9r-CBw-IzafjzrVADQqYaokauekaAru0EALw_wcB&gclsrc=aw.ds",
+    "img": "microphoneTwo.jpeg",
+    "title": "microphone",
+    "tag": "onSale"
+}
+
+let marshallsAmp = {
+    "name": "Marshalls Amlifier",
+    "price": "$250.00",
+    "description": "The Marshall's Amp is our highest rated amp at Jackel's Audio.",
+    "URL": "https://goo.gl/images/NxkznV",
+    "img": "",
+    "title": "amplifier",
+    "tag": "onSale",
+    "page": "onSale"
+}
+
+ let purpleAmp = {
+    "name": "Winfield's Purple Amplifier",
+    "price": "$50.00",
+    "description": "This is one of our mini amps. It is great for traveling!",
+    "URL": "https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjKl7KDm_jWAhWG5YMKHXYNCywQjRwIBw&url=http%3A%2F%2Fwww.rainbowguitars.com%2Fguitar%2Fwinfield%2Fcyclone-amplifier-head-purple%2Fcyclonepurple%2Fwf&psig=AOvVaw2sXYXwjxw_Blm-WcR-8Mnh&ust=1508348729210528",
+    "img": "",
+    "title": "amplifier",
+    "tag": "onSale",
+    "page": "onSale"
+}
+
+ let guitarAmp = {
+    "name": "Guitar Amplifer",
+    "price": "$45.00",
+    "description": " This amplifier is great for muscians. You will have incredible sound quality while playing your instruments",
+    "URL": "https://l6c-acdn2.line6.net/data/6/0a020a3d10fdc590224b50a5a1/image/png/file.png",
+    "img": "",
+    "title": "amplifier",
+    "tag": "onSale",
+    "page": "onSale"
+}
 
 
 // Pushing objects into array
-products.push(speakerSystem, amplifier, headphones, djSampler, djController, mixerBehringer, mixerPresonus, mixerSound, mixerAkai, mixerMackie, pioneerController, passiveSpeakers, boseSpeakers, wirelessBoseSpeakers, fullSpeakerBose)
+products.push(speakerSystem, amplifier, headphones, djSampler, djController, mixerBehringer, mixerPresonus, mixerSound, mixerAkai, mixerMackie, pioneerController, passiveSpeakers, boseSpeakers, wirelessBoseSpeakers, fullSpeakerBose, microphone, microphoneTwo, marshallsAmp, purpleAmp, guitarAmp)
 
 //Created a constant variable holding the stringified array
 const productsArchiveString = JSON.stringify(products);
