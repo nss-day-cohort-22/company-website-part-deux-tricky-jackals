@@ -174,7 +174,7 @@ function hideNext() {
     if(current === 16){
         next.style.display = "none"
     } else {
-        next.style.display = "block"
+        next.style.display = "inline-block"
     }
 }
 
@@ -184,7 +184,7 @@ function Hide() {
     if(current === 0){
         previous.style.display = "none"
     } else {
-        previous.style.display = "block"
+        previous.style.display = "inline-block"
     }
 }
 
