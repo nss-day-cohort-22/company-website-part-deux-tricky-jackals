@@ -12,9 +12,11 @@ const serviceInfo = document.getElementsByClassName("services")[0]
         serviceInfo.innerHTML +=  //CALL THE DATA TO THE UI
         `
         <article class="$(key) gridbox">    
-            <h3>${service.name}</h3>        
+            <h3>${service.name}</h3>   
+            <br>     
             <p>${service.description}</p>
-            <p>${service.HourlyRate}</p>
+            <br>
+            <p>$${service.HourlyRate} Per Hour</p>
         </article>
         `
         }
