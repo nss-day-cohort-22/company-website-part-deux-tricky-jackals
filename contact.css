@@ -26,5 +26,6 @@ box-shadow: 5px 5px 30px black;
 }
 
 body {
-height: auto;    
+height: auto;   
+margin-bottom: -30px; 
 }

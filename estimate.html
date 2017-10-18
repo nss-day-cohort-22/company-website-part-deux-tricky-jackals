@@ -7,6 +7,7 @@
     </head>
     <body>
             <div class="container">
+                <!--Navigation Bar-->
                     <header>
                         <h1> Jackel Audio <span>"Exceptional Service and Sound Quality Since 1955"</span></h1>	
                         <nav class="codrops-demos">
@@ -15,14 +16,15 @@
                             <a href="services.html">Services</a>
                             <a href="estimate.html">Estimates</a>
                             <a href="about.html">About</a>
-                            <a href="practice.html">About</a>
                         </nav>
                     </header>
                 </div>
+        <!-- Estimate Calculator -->
         <section id="estimateReq">
             <div class="container1">
             <h1>Estimate Calculator</h1>
             <h2>Services</h2>
+            <!-- First Service Option-->
             <section id= "service-1">
             <select class="service-select">
                 <option value="0">---</option>
@@ -45,6 +47,7 @@
             </select>
             <button onclick = "showNextService()">Add Service</button>
             </section>  
+            <!-- Second Service Option-->
             <section id= "service-2" style="display: none">
                 <select class="service-select">
                     <option value="0">---</option>
@@ -66,6 +69,7 @@
                 </select>
                 <button onclick = "showNextService()">Add Service</button>
                 </section>  
+                <!-- Third Service Option-->
                 <section id= "service-3" style="display: none">
                     <select class="service-select">
                         <option value="0">---</option>
@@ -85,22 +89,25 @@
                         <option value = "11">11</option>
                         <option value = "12">12</option>
                     </select>
-                    <button onclick = "showNextService()">Add Service</button>
                     </section>  
                 
                     <button onClick="calculateEstimate()">Calculate Total</button>
                     <h3>Sub-total:</h3>
-                    <h2 id="subtotal"></h2>
+                    <h3 id="subtotal"></h3>
                     <h3>Tax:</h3>
-                    <h2 id="tax"></h2>
-                    <h3>Your Estimated Total is:</h3>
-                    <h3 id="total"></h3>
+                    <h3 id="tax"></h3>
+                    <h2>Your Estimated Total is:</h2>
+                    <h2 id="total"></h2>
                     </div>
             </section>
+
+            <!--Product Price Calculator -->
+
             <section id="productForm">
                 <div class="container1">
                 <h1>Price Calculator</h1>
                 <h2>Products:</h2>
+                <!--First Product Option -->
                 <section id= "product-1">
                         <select class="product-select">
                             <option value="0">---</option>
@@ -122,6 +129,7 @@
                         </select>
                         <button onclick="showNextProduct()">Add Another Product</button>
                         </section> 
+                        <!--Second Product Option -->
                         <section id= "product-2" style="display: none">
                             <select class="product-select">
                                 <option value="0">---</option>
@@ -143,6 +151,7 @@
                             </select>
                             <button onclick="showNextProduct()">Add Another Product</button>
                         </section> 
+                        <!--Third Product Option -->
                         <section id= "product-3" style="display: none">
                             <select class="product-select">
                                 <option value="0">---</option>
@@ -164,6 +173,7 @@
                             </select>
                             <button onclick="showNextProduct()">Add Another Product</button>
                         </section>
+                        <!--Fourth Product Option -->
                         <section id= "product-4" style="display: none">
                             <select class="product-select">
                                 <option value="0">---</option>
@@ -185,6 +195,7 @@
                             </select>
                             <button onclick="showNextProduct()">Add Another Product</button>
                         </section>
+                        <!--Fifth Product Option -->
                         <section id= "product-5" style="display: none">
                             <select class="product-select">
                                 <option value="0">---</option>
@@ -208,17 +219,17 @@
                         </section>   
                         <button onClick="calculatePrice()">Calculate Total</button>
                         <h3>Sub-total:</h3>
-                        <h2 id="subtotal2"></h2>
+                        <h3 id="subtotal2"></h3>
                         <h3>Tax:</h3>
-                        <h2 id="tax2"></h2>
-                        <h3>Your Estimated Total is:</h3>
-                        <h3 id="total2"></h3>  
+                        <h3 id="tax2"></h3>
+                        <h2>Your Estimated Total is:</h2>
+                        <h2 id="total2"></h2>  
                          
                     </div>
 
 
             </section>
-            <!-- Begin writing the footer -->
+            <!--  footer -->
             <footer class="footerContent">
                     <div id="contact">
                         <p class="bold">Contact</h4></p>
