@@ -148,7 +148,7 @@ let wirelessBoseSpeakers = {
     "price": "5352.00",
     "description": "Two 1,000W Array Loudspeakers, Two 1,000W Powered Subwoofers, and Carrying Bags for each",
     "URL": "https://media.sweetwater.com/api/i/f-webp__ha-63b8f12cb04b3d25__q-82__hmac-a700f6ac0f1020d649ff5c8324fcd56c39193d67/images/items/750/F1System-large.jpg.auto.webp",
-    "img": "https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjb5emSt_jWAhUp4YMKHR0pBZQQjRwIBw&url=https%3A%2F%2Fwww.crutchfield.com%2FISEO-rgbtcspd%2Fp_018AM5VB%2FBose-Acoustimass-5-Series-V-speaker-system-Black.html&psig=AOvVaw2uZDLTOgZk3Bw2efI6xxCP&ust=1508356271407828",
+    "img": "fullbose.jpeg",
     "title": "speakers",
     "tag": "onSale"
 }
@@ -178,7 +178,7 @@ let marshallsAmp = {
     "price": "$250.00",
     "description": "The Marshall's Amp is our highest rated amp at Jackel's Audio.",
     "URL": "https://goo.gl/images/NxkznV",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/6/61/Marshall_ValveState_VS100R.jpg",
+    "img": "marshallsamp2.jpeg",
     "title": "amplifier",
     "tag": "onSale",
     "page": "onSale"
@@ -189,7 +189,7 @@ let marshallsAmp = {
     "price": "$50.00",
     "description": "This is one of our mini amps. It is great for traveling!",
     "URL": "https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjKl7KDm_jWAhWG5YMKHXYNCywQjRwIBw&url=http%3A%2F%2Fwww.rainbowguitars.com%2Fguitar%2Fwinfield%2Fcyclone-amplifier-head-purple%2Fcyclonepurple%2Fwf&psig=AOvVaw2sXYXwjxw_Blm-WcR-8Mnh&ust=1508348729210528",
-    "img": "http://www.rainbowguitars.com/imagesproduct/wf/wfcyclonepurple-xl.jpg",
+    "img": "winfieldpurple.jpeg",
     "title": "amplifier",
     "tag": "onSale",
     "page": "onSale"
@@ -200,7 +200,7 @@ let marshallsAmp = {
     "price": "$45.00",
     "description": " This amplifier is great for muscians. You will have incredible sound quality while playing your instruments",
     "URL": "https://l6c-acdn2.line6.net/data/6/0a020a3d10fdc590224b50a5a1/image/png/file.png",
-    "img": "http://www.guitarcenter.com/Fender/Champion-20-Guitar-Combo-Amp.gc",
+    "img": "oldamp.jpeg",
     "title": "amplifier",
     "tag": "onSale",
     "page": "onSale"

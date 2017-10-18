@@ -1,6 +1,52 @@
 
+body {
+    height: auto;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section-li {
+    margin-left: 10px;
+}
+
 .products {
-    border: 1px solid black;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.5);
     padding: 20px 10px;
-    margin: 20px 5%;
+    margin: 20px 10%;
+}
+
+img {
+    border-radius: 4px;
+}
+
+#pagesBox ul {
+    margin: 0;
+    padding: 0 0 20px 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+#pagesBox ul li { 
+    display: inline; 
+}
+
+#pagesBox ul li a {
+    text-decoration: none;
+    padding: .2em 1em;
+    color: #fff;
+}
+
+#pagesBox ul li a:hover {
+    color: #fff;
+    cursor: pointer;
 }
