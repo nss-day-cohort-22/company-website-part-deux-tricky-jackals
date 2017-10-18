@@ -1,27 +1,36 @@
+//Set a variable to keep track of what page is being viewed
 let current = 0
 
 
-
+//Created a function to filter through the pages of products
 function filter(event) {
+    //Defined variable to get products from local storage
     const storedProduct=JSON.parse(localStorage.getItem("productsArchive"));
+    //defined variable to determine where HTML would be inserted
     let productsOut = document.getElementById("productList");
+    //defined a variable to store the loop start point
     let start;
-    console.log(current)
-   
+   //Created an if statement to determine if the catalyst of the function was a click or not.
     if(event.type === "click"){
          start = parseInt(event.target.id);
     } else {
          start = event
     }
+    //Assigned a value to current 
     current=start;
+    //Called the Hide() function to hide/display the "<" arrow
     Hide()
+    //Called the hideNext() function to hide/display the ">" arrow
     hideNext()
+    //Called the showCurrent() function to change the color and disable the current page
     showCurrent()
+    //Set the output point of HTML to and empty string to clear the products
     productsOut.innerHTML = ""
-    
+    //Created a for loop and set its start point with the value of "start" and its loop duration of "start + 4"
     for (let i= start; i < (start+4); i++) {
-        
+        //stored the current product object in a variable
         product = storedProduct[i];
+        //wrote the html code to be inserted at the designated spot on the HTML doc
         productsOut.innerHTML += 
         `
         <section class= "products ${product.tag}">
@@ -36,14 +45,15 @@ function filter(event) {
     }
 }
 
-
+//Created a function that will change the color of the current product page and diable it.
 function showCurrent() {
+    // stored the DOM elements to variables
     let pg1 = document.getElementById("0")
     let pg2 = document.getElementById("4")
     let pg3 = document.getElementById("8")
     let pg4 = document.getElementById("12")
     let pg5 = document.getElementById("16")
-    
+    //Created a switch statement that would compare the value of current to the Id of the page link and change the color and disable it.
     switch(true) {
         case current === 0:
             pg1.style.color = "purple";
@@ -92,7 +102,6 @@ function showCurrent() {
             pg1.disabled = "false";
             pg5.style.color = "white";
             pg5.disabled = "false";
-
             break;
         case current === 16:
             pg5.style.color = "purple";
@@ -109,7 +118,7 @@ function showCurrent() {
     }   
 }
 
-
+//Created a function to show the previous page of products
 function prevFilter(){
     switch(true) {
     case current === 4:
@@ -126,7 +135,7 @@ case current === 16:
     break;
 }
 }
-
+//Created a function to show the next page of products
 function nextFilter(){
     switch (true) {
         case current === 0:
@@ -141,10 +150,9 @@ function nextFilter(){
         case current === 12:
             filter(16);
             break;
-    
-
 }
 }
+//captures the links of each page select and adds an event listener to listen for users "click" and calls a function
 document.getElementById("prev").addEventListener("click", prevFilter)
 document.getElementById("0").addEventListener("click", filter)
 document.getElementById("4").addEventListener("click", filter)
@@ -154,8 +162,7 @@ document.getElementById("16").addEventListener("click", filter)
 document.getElementById("next").addEventListener("click", nextFilter)
 
 
-filter(0)
-
+//Creatd a function to hide/show the ">" arrow
 function hideNext() {
     let next = document.getElementById("next")
     if(current === 16){
@@ -165,8 +172,7 @@ function hideNext() {
     }
 }
 
-
-
+//Created a function to hide/show the "<" arrow
 function Hide() {
     let previous = document.getElementById("prev")
     if(current === 0){
@@ -175,6 +181,9 @@ function Hide() {
         previous.style.display = "block"
     }
 }
+
+//called the following functions so they run when the page loads
+filter(0)
 Hide()
 showCurrent()
 /* 
