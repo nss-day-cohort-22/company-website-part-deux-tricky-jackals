@@ -10,6 +10,7 @@
 
 #employeeList {
     text-align: center;
+    letter-spacing: .1em;
     
 }
 
@@ -18,7 +19,9 @@
     color: dark black;
     margin: 2em 2em 2em 2em;
     padding: 5em;
-    text-align: left;
+    text-align: center;
     background: gray;
+    display: center;
+    letter-spacing: .2em;
     
 }
