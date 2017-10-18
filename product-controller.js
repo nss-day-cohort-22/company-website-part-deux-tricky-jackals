@@ -20,12 +20,18 @@ function filter(event) {
         productsOut.innerHTML += 
         `
         <section class= "products ${product.tag}">
-        <img src="${product.img}" width="150px">
-        <ul>
-            <li>Product: ${product.name}</li>
-            <li>Price: $${product.price}</li>
-            <li>Description: ${product.description}</li>
-        </ul>
+            <div class="section-container">
+                <div class="section-img">
+                    <img src="${product.img}" width="150px" >
+                </div>
+                <div class="section-li">
+                    <ul style="display:inline-block">
+                        <li>Product: ${product.name}</li>
+                        <li>Price: $${product.price}</li>
+                        <li>Description: ${product.description}</li>
+                    </ul>
+                </div>
+            </div>
         </section>
         `
     }

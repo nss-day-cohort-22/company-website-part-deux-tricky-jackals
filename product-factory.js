@@ -57,8 +57,8 @@ let mixerBehringer = {
     "name": "Behringer X32 Digital Mixer",
     "price": "1999.99",
     "description": "The Behringer X32 digital mixer packs everything you need to easily mix and record a live show into a compact, roadworthy chassis.",
-    "URL": "https://www.sweetwater.com/store/detail/X32?mrkgcl=28&mrkgadid=2945987365&rkg_id=h-8423169d07cf1eb687bd20d11a86cfcb_t-1508257170&product_id=X32&campaigntype=shopping&campaign=aaShopping%2520-%2520Core&adgroup=Live%2520Sound%2520%26%2520Lighting%2520-%2520Mixers%2520-%2520Behringer&placement=google&adpos=1o2&creative=55678035481&device=c&matchtype=&network=g&gclid=Cj0KCQjw1JbPBRCrARIsAOKj2PneIH4FS7g4AoFCA7pqejD0T-8Dk-Ekzr_WiJs_spvgD6SsJd37iLUaAiG6EALw_wcB",
-    "img": "behringer x32.jpg",
+    "URL": "https://media.sweetwater.com/api/i/f-webp__ha-5ba0ccfacb82fb10__q-82__hmac-6e3c6196cc9b7fe7db1be749b613134769192add/images/items/750/X32-large.jpg.auto.webp",
+    "img": "behringer.png",
     "title": "mixer",
     "tag": "onSale"
 }
@@ -68,7 +68,7 @@ let mixerPresonus = {
     "price": "2999.99",
     "description": "The PreSonus StudioLive 32 digital mixing console/recorder represents the third generation of the acclaimed StudioLive series, and it's just as capable in the studio as it is for live sound.",
     "URL": "https://www.sweetwater.com/store/detail/SLMAD32?mrkgcl=28&mrkgadid=3208894243&rkg_id=h-8423169d07cf1eb687bd20d11a86cfcb_t-1508258217&product_id=SLMAD32&campaigntype=shopping&campaign=aaShopping%2520-%2520Core&adgroup=Live%2520Sound%2520%26%2520Lighting%2520-%2520Mixers%2520-%2520Other&placement=google&adpos=1o4&creative=55674776881&device=c&matchtype=&network=g&gclid=Cj0KCQjw1JbPBRCrARIsAOKj2PkF8y7o9LAGFcNEHQBmoN16UCkF38M8oBP0CbPW8YSrjfgO2TATjNQaAgLnEALw_wcB",
-    "img": "presonus mixer.jpg",
+    "img": "presonus.png",
     "title": "mixer",
     "tag": "onSale"
 }
@@ -128,7 +128,7 @@ let boseSpeakers = {
     "price": "599.95",
     "description": "These rectangular Virtually Invisible® in-wall speakers are engineered with one 7 inch woofer and two strategically positioned 1 tweeters each.",
     "URL": "https://assets.bosecom/content/dam/Bose_DAM/Web/consumer_electronics/global/products/speakers/virtually_invisible_891_in_wall_speakers/product_silo_images/virtually_invisible_891_EC_hero.psd/jcr:content/renditions/cq5dam.web.600.600.png",
-    "img": "boseInWallSpeaker.jpg",
+    "img": "boseinwall.jpg",
     "title": "speakers",
     "tag": "onSale"
 }
@@ -138,7 +138,7 @@ let wirelessBoseSpeakers = {
     "price": "778.90",
     "description": "Our popular wireless outdoor speakers deliver rich sound and clear performance—even in large outside areas.",
     "URL": "https://assets.bose.com/content/dam/Bose_DAM/Web/consumer_electronics/global/products/speakers/soundtouch_151_SE_outdoor_speaker_system/product_silo_images/st_outdoor_151se_sa5_black_EC1.psd/jcr:content/renditions/cq5dam.web.600.600.png",
-    "img": "speakersBoseSmall.png",
+    "img": "bose.jpeg",
     "title": "speakers",
     "tag": "onSale"  
 }
@@ -148,7 +148,7 @@ let wirelessBoseSpeakers = {
     "price": "5352.00",
     "description": "Two 1,000W Array Loudspeakers, Two 1,000W Powered Subwoofers, and Carrying Bags for each",
     "URL": "https://media.sweetwater.com/api/i/f-webp__ha-63b8f12cb04b3d25__q-82__hmac-a700f6ac0f1020d649ff5c8324fcd56c39193d67/images/items/750/F1System-large.jpg.auto.webp",
-    "img": "bosef1.jpeg",
+    "img": "fullbose.jpeg",
     "title": "speakers",
     "tag": "onSale"
 }
@@ -178,7 +178,7 @@ let marshallsAmp = {
     "price": "$250.00",
     "description": "The Marshall's Amp is our highest rated amp at Jackel's Audio.",
     "URL": "https://goo.gl/images/NxkznV",
-    "img": "",
+    "img": "marshallsamp2.jpeg",
     "title": "amplifier",
     "tag": "onSale",
     "page": "onSale"
@@ -189,7 +189,7 @@ let marshallsAmp = {
     "price": "$50.00",
     "description": "This is one of our mini amps. It is great for traveling!",
     "URL": "https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjKl7KDm_jWAhWG5YMKHXYNCywQjRwIBw&url=http%3A%2F%2Fwww.rainbowguitars.com%2Fguitar%2Fwinfield%2Fcyclone-amplifier-head-purple%2Fcyclonepurple%2Fwf&psig=AOvVaw2sXYXwjxw_Blm-WcR-8Mnh&ust=1508348729210528",
-    "img": "",
+    "img": "winfieldpurple.jpeg",
     "title": "amplifier",
     "tag": "onSale",
     "page": "onSale"
@@ -200,7 +200,7 @@ let marshallsAmp = {
     "price": "$45.00",
     "description": " This amplifier is great for muscians. You will have incredible sound quality while playing your instruments",
     "URL": "https://l6c-acdn2.line6.net/data/6/0a020a3d10fdc590224b50a5a1/image/png/file.png",
-    "img": "",
+    "img": "oldamp.jpeg",
     "title": "amplifier",
     "tag": "onSale",
     "page": "onSale"
