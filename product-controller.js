@@ -6,16 +6,21 @@ function filter(event) {
     const storedProduct=JSON.parse(localStorage.getItem("productsArchive"));
     let productsOut = document.getElementById("productList");
     let start;
+    console.log(current)
+   
     if(event.type === "click"){
          start = parseInt(event.target.id);
     } else {
          start = event
     }
     current=start;
+    Hide()
+    hideNext()
+    showCurrent()
     productsOut.innerHTML = ""
-    console.log(start)
+    
     for (let i= start; i < (start+4); i++) {
-        console.log(i);
+        
         product = storedProduct[i];
         productsOut.innerHTML += 
         `
@@ -32,6 +37,77 @@ function filter(event) {
 }
 
 
+function showCurrent() {
+    let pg1 = document.getElementById("0")
+    let pg2 = document.getElementById("4")
+    let pg3 = document.getElementById("8")
+    let pg4 = document.getElementById("12")
+    let pg5 = document.getElementById("16")
+    
+    switch(true) {
+        case current === 0:
+            pg1.style.color = "purple";
+            pg1.disabled = "true";
+            pg2.style.color = "white";
+            pg2.disabled = "false";
+            pg3.style.color = "white";
+            pg3.disabled = "false";
+            pg4.style.color = "white";
+            pg4.disabled = "false";
+            pg5.style.color = "white";
+            pg5.disabled = "false";
+            break;
+        case current === 4:
+            pg2.style.color = "purple";
+            pg2.disabled = "true";
+            pg1.style.color = "white";
+            pg1.disabled = "false";
+            pg3.style.color = "white";
+            pg3.disabled = "false";
+            pg4.style.color = "white";
+            pg4.disabled = "false";
+            pg5.style.color = "white";
+            pg5.disabled = "false";
+            break;
+        case current === 8:
+            pg3.style.color = "purple";
+            pg3.disabled = "true";
+            pg2.style.color = "white";
+            pg2.disabled = "false";
+            pg1.style.color = "white";
+            pg1.disabled = "false";
+            pg4.style.color = "white";
+            pg4.disabled = "false";
+            pg5.style.color = "white";
+            pg5.disabled = "false";
+            break;
+        case current === 12:
+            pg4.style.color = "purple";
+            pg4.disabled = "true";
+            pg2.style.color = "white";
+            pg2.disabled = "false";
+            pg3.style.color = "white";
+            pg3.disabled = "false";
+            pg1.style.color = "white";
+            pg1.disabled = "false";
+            pg5.style.color = "white";
+            pg5.disabled = "false";
+
+            break;
+        case current === 16:
+            pg5.style.color = "purple";
+            pg5.disabled = "true";
+            pg2.style.color = "white";
+            pg2.disabled = "false";
+            pg3.style.color = "white";
+            pg3.disabled = "false";
+            pg4.style.color = "white";
+            pg4.disabled = "false";
+            pg1.style.color = "white";
+            pg1.disabled = "false";
+            break;
+    }   
+}
 
 
 function prevFilter(){
@@ -79,6 +155,18 @@ document.getElementById("next").addEventListener("click", nextFilter)
 
 
 filter(0)
+
+function hideNext() {
+    let next = document.getElementById("next")
+    if(current === 16){
+        next.style.display = "none"
+    } else {
+        next.style.display = "block"
+    }
+}
+
+
+
 function Hide() {
     let previous = document.getElementById("prev")
     if(current === 0){
@@ -88,6 +176,7 @@ function Hide() {
     }
 }
 Hide()
+showCurrent()
 /* 
 //Created a variable to hold the queried DOM element.
 let productsOut = document.getElementById("productList");
