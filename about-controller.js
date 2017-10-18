@@ -11,8 +11,8 @@ teamInfo.innerHTML +=
 <section class= "employee">
 <img src = "${employees.img}" width="100px">
 <ul>
-<li>emp: ${employees.name}</li>    
-<li>favorite song: ${employees.favoriteSong}</li>
+<li>Our Team: ${employees.name}</li>    
+<li>Fun Facts: ${employees.favoriteSong}</li>
 
 </ul>
 
