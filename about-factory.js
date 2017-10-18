@@ -7,7 +7,7 @@ const courtney = {      //here is the string of data
 
 const tyler = {
 "name": "Tyler Bowman",
-"favoriteSong": "His favorite song" ,
+"favoriteSong": "His favorite genre is bluegrass and with his background in music, he likes to play folk and bluegrass style." ,
 "img": "",
 }
 
